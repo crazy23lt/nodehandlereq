@@ -32,7 +32,7 @@ const middlewares = {
   // 多文件上传
   uploads: (req, res, next) => {
     let upload = multer({ dest: "upload/" }).array("photo", 3);
-    upload(req, res, (err) => {});
+    upload(req, res, (err) => { })
   },
 };
 module.exports = middlewares;
